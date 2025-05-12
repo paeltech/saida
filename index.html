@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saida - The Future of Banking Runs on Agentic AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Figtree", "sans-serif"],
+            },
+            colors: {
+              primary: "#1a365d",
+              secondary: "#2d3748",
+              accent: "#4299e1",
+              dark: "#0a0a0a",
+              light: "#e5e5e5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-50 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <!-- Logo Left -->
+          <div class="flex items-center flex-shrink-0">
+            <a href="#" class="text-2xl font-bold tracking-tight">Saida</a>
+          </div>
+          <!-- Centered Nav Links -->
+          <div class="flex-1 flex justify-center">
+            <div class="flex space-x-8">
+              <a
+                href="#products"
+                class="text-gray-600 hover:text-gray-900 transition"
+                >Products</a
+              >
+              <a
+                href="#solutions"
+                class="text-gray-600 hover:text-gray-900 transition"
+                >Solutions</a
+              >
+              <a
+                href="#about"
+                class="text-gray-600 hover:text-gray-900 transition"
+                >About</a
+              >
+            </div>
+          </div>
+          <!-- Contact Us Button Right -->
+          <div class="flex items-center flex-shrink-0">
+            <a
+              href="#contact"
+              class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-4 py-2 rounded-md hover:opacity-90 transition"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+      class="pt-32 pb-16 bg-gray-50 text-gray-900 h-screen flex items-center justify-center"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center"
+      >
+        <div class="text-left w-full md:w-1/2">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">
+            Conversational AI for the Modern Financial Service Provider.
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-gray-600">
+            Move beyond general conversational bots to intelligent actions,
+            predictive engagement, and trusted compliance with Saida AI.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#demo"
+              class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-8 py-3 rounded-md font-semibold hover:opacity-90 transition"
+            >
+              Schedule a Meeting
+            </a>
+            <a
+              href="#contact"
+              class="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-primary transition"
+            >
+              Request a Demo
+            </a>
+          </div>
+        </div>
+        <div class="w-1/2 flex items-center justify-center relative">
+          <img
+            src="img/customer-service.webp"
+            alt="Smiling woman with e-bike UI and priorities overlay"
+            class="w-full max-w-md object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Purpose-built for financial institutions
+            </h3>
+            <p class="text-gray-600">
+              Tailored solutions for modern banking needs
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Zero-hallucination platform
+            </h3>
+            <p class="text-gray-600">Accurate and reliable AI responses</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Trusted compliance and security
+            </h3>
+            <p class="text-gray-600">Enterprise-grade security measures</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-sm">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Proven revenue growth
+            </h3>
+            <p class="text-gray-600">Measurable business outcomes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Saida Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="w-1/2 text-left mb-12">
+          <h2 class="text-3xl font-bold mb-4">Why Saida?</h2>
+          <p class="text-lg text-gray-700 mb-6">
+            Saida delivers the next evolution
+            <span class="font-semibold">Agentic AI</span> that blends the
+            predictability of your compliance systems with the intelligence and
+            proactivity today's customers demand. While others sell automation,
+            <span class="font-semibold">we empower your organization to</span>
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Win trust in a digital-first world
+            </h3>
+            <p class="text-gray-600">
+              Build lasting customer relationships through intelligent
+              interactions
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Grow revenue with personalized journeys
+            </h3>
+            <p class="text-gray-600">
+              Drive growth through predictive customer engagement
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Slash operational costs
+            </h3>
+            <p class="text-gray-600">
+              Reduce costs through intelligent automation
+            </p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-primary mb-2">
+              Future-proof your institution
+            </h3>
+            <p class="text-gray-600">
+              Stay ahead of the next wave of AI disruption
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transformation Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Transform your Customer and Employee Experiences with Trusted AI
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-semibold text-primary mb-6">
+              Innovative Customer Experiences
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Fulfill customer needs through engaging conversational experiences
+              leveraging
+              <span class="font-semibold">Prescriptive & Generative AI</span>
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-6 py-3 rounded-md font-semibold hover:opacity-90"
+            >
+              Explore Saida AI Agents
+            </a>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-semibold text-primary mb-6">
+              Empowering Your Employees
+            </h3>
+            <p class="text-gray-600 mb-6">
+              <span class="font-semibold">Get instant, accurate answers</span>
+              using your institution's knowledge base and the power of
+              Generative AI
+            </p>
+            <a
+              href="#"
+              class="inline-block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-6 py-3 rounded-md font-semibold hover:opacity-90"
+            >
+              Explore Saida Answers
+            </a>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <p class="text-lg text-gray-700 mb-6">
+            Saida's products drive measurable business outcomes while meeting
+            the requirements for reliability, compliance, and risk.
+          </p>
+          <a
+            href="#"
+            class="inline-block bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-8 py-3 rounded-md font-semibold hover:opacity-90"
+          >
+            Explore all Saida Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Value Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Business Value for Banks
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Predictive Engagement
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Anticipate customer needs before they even reach out.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Increase containment rates</li>
+              <li>• Decrease abandonment</li>
+              <li>• Strengthen customer trust</li>
+            </ul>
+            <div class="mt-6 text-3xl font-bold text-primary">90%</div>
+            <p class="text-gray-600">of questions are answered by Saida</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Personalized Experiences
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Tailor every interaction with user behavior, history, and
+              preferences.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Boost CSAT and NPS</li>
+              <li>• Deepen engagement</li>
+              <li>• Increase loyalty and lifetime value</li>
+            </ul>
+            <div class="mt-6 text-3xl font-bold text-primary">3x</div>
+            <p class="text-gray-600">increase in digital engagement</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Proactive AI Outreach
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Engage customers proactively to turn service interactions into
+              growth opportunities.
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Reduce inbound volume</li>
+              <li>• Create new revenue streams</li>
+              <li>• Improve customer satisfaction</li>
+            </ul>
+            <div class="mt-6 text-3xl font-bold text-primary">1B+</div>
+            <p class="text-gray-600">consumers with access to Saida</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Saida Answers
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Instant, accurate answers using your bank's knowledge base
+              </p>
+              <a href="#" class="text-accent hover:text-primary"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 class="text-xl font-semibold text-primary mb-4">AI Agents</h3>
+              <p class="text-gray-600 mb-4">
+                Intelligent automation for complex banking workflows
+              </p>
+              <a href="#" class="text-accent hover:text-primary"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 class="text-xl font-semibold text-primary mb-4">SaidaGPT</h3>
+              <p class="text-gray-600 mb-4">
+                Advanced language model for financial institutions
+              </p>
+              <a href="#" class="text-accent hover:text-primary"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+          <div class="group">
+            <div
+              class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+            >
+              <h3 class="text-xl font-semibold text-primary mb-4">
+                Saida Platform
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Comprehensive AI platform for banking
+              </p>
+              <a href="#" class="text-accent hover:text-primary"
+                >Learn More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Explore Saida's Many Use Cases
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Customer Assist
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Financial institutions often experience significant spikes in
+              customer support requests and inbound calls during major
+              transition events like mergers, system upgrades, or conversions.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Saida's AI Agent with Saida Answers empowers financial
+              institutions to handle these increased demands by leveraging
+              prescriptive and generative AI-powered Agents ensuring consistent
+              and efficient customer support.
+            </p>
+            <a href="#" class="text-accent hover:text-primary font-semibold"
+              >Learn How →</a
+            >
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Agent Assist
+            </h3>
+            <p class="text-gray-600 mb-4">
+              When information is difficult to access, it leads to longer agent
+              response times and slower resolutions to customer inquiries. This
+              not only frustrates employees but also diminishes the overall
+              customer service experience.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Saida Answers provides agents instant access to the information
+              they need, significantly reducing onboarding time and boosting
+              confidence in customer interactions.
+            </p>
+            <a href="#" class="text-accent hover:text-primary font-semibold"
+              >Learn How →</a
+            >
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg">
+            <h3 class="text-xl font-semibold text-primary mb-4">
+              Employee Assist
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Employees often face inefficiencies as they search through
+              multiple knowledge repositories or consult colleagues. This
+              results in delays in process and increased back-and-forth with
+              customers.
+            </p>
+            <p class="text-gray-600 mb-4">
+              Saida Answers integrates seamlessly with the financial
+              institution's knowledge repositories, providing employees with
+              direct, referenceable answers to questions and quick access to
+              relevant documents and policies.
+            </p>
+            <a href="#" class="text-accent hover:text-primary font-semibold"
+              >Learn How →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Ready to Redefine Banking?</h2>
+          <p class="text-xl text-gray-600">
+            Schedule a meeting or request a demo today
+          </p>
+        </div>
+        <div class="flex justify-center space-x-4">
+          <a
+            href="#demo"
+            class="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-600 via-blue-500 to-indigo-500 text-gray-50 px-8 py-3 rounded-md font-semibold hover:opacity-90"
+          >
+            Schedule a Meeting
+          </a>
+          <a
+            href="#contact"
+            class="border-2 border-gray-900 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-primary"
+          >
+            Request a Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Products</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Saida Answers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">AI Agents</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Saida-GPT</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Saida Platform</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Company</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Resources</h3>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Blog & News</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Webinars</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Events</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Connect</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
+        >
+          <p>&copy; 2024 Saida, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
